@@ -12,8 +12,13 @@ function isPalindrom(userWord){
     let reversedWord = "";
     for(let i = userWord.length -1; i >= 0; i--){
         reversedWord += userWord[i];
+    }  
+    
+    if(userWord === reversedWord){
+        return true;
+    }else if(userWord !== reversedWord){
+        return false;
     }
-    console.log(reversedWord);
 }
 
 console.log(isPalindrom(userWord));
