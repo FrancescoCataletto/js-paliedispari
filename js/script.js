@@ -55,19 +55,16 @@ numBtn.addEventListener("click", function(){
 
     const segno = document.getElementById("segno").value;
     const numero = parseInt(document.getElementById("your-num").value);
-    console.log(segno, numero);
 
     let random;
     function randomNum(){
         random = Math.floor(Math.random() * 5 + 1);
         computerNum.innerHTML = "Computer number is" + " " + random;
-        return random;
     }
     
-    console.log(randomNum());
+    randomNum();
 
     let sum = numero + random;
-    console.log(sum);
 
     function winner(sum){
         if(segno === "pari" && (sum % 2) === 0){
@@ -81,7 +78,7 @@ numBtn.addEventListener("click", function(){
         }
     }
 
-    console.log(winner(sum));
+    return winner(sum);
 
 })
 
