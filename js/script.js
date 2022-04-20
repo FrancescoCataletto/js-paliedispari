@@ -6,22 +6,22 @@ Bonus: L’inserimento avviene tramite un campo input
 
  */
 
-const userWord = prompt("Inserisci una parola");
+// const userWord = prompt("Inserisci una parola");
 
-function isPalindrom(userWord){
-    let reversedWord = "";
-    for(let i = userWord.length -1; i >= 0; i--){
-        reversedWord += userWord[i];
-    }  
+// function isPalindrom(userWord){
+//     let reversedWord = "";
+//     for(let i = userWord.length -1; i >= 0; i--){
+//         reversedWord += userWord[i];
+//     }  
     
-    if(userWord === reversedWord){
-        return true;
-    }else if(userWord !== reversedWord){
-        return false;
-    }
-}
+//     if(userWord === reversedWord){
+//         return true;
+//     }else if(userWord !== reversedWord){
+//         return false;
+//     }
+// }
 
-console.log(isPalindrom(userWord));
+// console.log(isPalindrom(userWord));
 
 
 
@@ -38,3 +38,8 @@ Dichiariamo chi ha vinto.
 Bonus: L’inserimento avviene tramite un campo input
 
  */
+
+const segno = prompt("pari o dispari?");
+const numero = parseInt(prompt("inserisci un numero da 1 a 5"));
+
+console.log(segno, numero);
