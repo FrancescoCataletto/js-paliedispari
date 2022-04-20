@@ -6,22 +6,31 @@ Bonus: L’inserimento avviene tramite un campo input
 
  */
 
-// const userWord = prompt("Inserisci una parola");
 
-// function isPalindrom(userWord){
-//     let reversedWord = "";
-//     for(let i = userWord.length -1; i >= 0; i--){
-//         reversedWord += userWord[i];
-//     }  
+const palBtn = document.getElementById("pal-btn");
+
+palBtn.addEventListener("click", function(){
+
+    const userWord = document.getElementById("pal-word").value;
+
+    function isPalindrom(userWord){
+        let reversedWord = "";
+        for(let i = userWord.length -1; i >= 0; i--){
+            reversedWord += userWord[i];
+        } 
+        
+        console.log(reversedWord);
+        
+        if(userWord === reversedWord){
+            return true;
+        }else if(userWord !== reversedWord){
+            return false;
+        }
+    }
     
-//     if(userWord === reversedWord){
-//         return true;
-//     }else if(userWord !== reversedWord){
-//         return false;
-//     }
-// }
+    console.log(isPalindrom(userWord));
 
-// console.log(isPalindrom(userWord));
+})
 
 
 
@@ -39,31 +48,31 @@ Bonus: L’inserimento avviene tramite un campo input
 
  */
 
-const segno = prompt("pari o dispari?");
-const numero = parseInt(prompt("inserisci un numero da 1 a 5"));
-console.log(segno, numero);
+// const segno = prompt("pari o dispari?");
+// const numero = parseInt(prompt("inserisci un numero da 1 a 5"));
+// console.log(segno, numero);
 
-let random;
-function randomNum(){
-    random = Math.floor(Math.random() * 5 + 1);
-    return random;
-}
+// let random;
+// function randomNum(){
+//     random = Math.floor(Math.random() * 5 + 1);
+//     return random;
+// }
 
-console.log(randomNum());
+// console.log(randomNum());
 
-let sum = numero + random;
-console.log(sum);
+// let sum = numero + random;
+// console.log(sum);
 
-function winner(sum){
-    if(segno === "pari" && (sum % 2) === 0){
-        console.log("You won!");
-    }else if(segno === "dispari" && (sum % 2) === 0){
-        console.log("You lost!");
-    }else if(segno === "pari" && (sum % 2) !== 0){
-        console.log("You lost!");
-    }else if (segno === "dispari" && (sum % 2) !== 0){
-       console.log("You won!");
-    }
-}
+// function winner(sum){
+//     if(segno === "pari" && (sum % 2) === 0){
+//         console.log("You won!");
+//     }else if(segno === "dispari" && (sum % 2) === 0){
+//         console.log("You lost!");
+//     }else if(segno === "pari" && (sum % 2) !== 0){
+//         console.log("You lost!");
+//     }else if (segno === "dispari" && (sum % 2) !== 0){
+//        console.log("You won!");
+//     }
+// }
 
-console.log(winner(sum));
+// console.log(winner(sum));
