@@ -7,30 +7,30 @@ Bonus: L’inserimento avviene tramite un campo input
  */
 
 
-const palBtn = document.getElementById("pal-btn");
+// const palBtn = document.getElementById("pal-btn");
 
-palBtn.addEventListener("click", function(){
+// palBtn.addEventListener("click", function(){
 
-    const userWord = document.getElementById("pal-word").value;
+//     const userWord = document.getElementById("pal-word").value;
 
-    function isPalindrom(userWord){
-        let reversedWord = "";
-        for(let i = userWord.length -1; i >= 0; i--){
-            reversedWord += userWord[i];
-        } 
+//     function isPalindrom(userWord){
+//         let reversedWord = "";
+//         for(let i = userWord.length -1; i >= 0; i--){
+//             reversedWord += userWord[i];
+//         } 
         
-        console.log(reversedWord);
+//         console.log(reversedWord);
         
-        if(userWord === reversedWord){
-            return true;
-        }else if(userWord !== reversedWord){
-            return false;
-        }
-    }
+//         if(userWord === reversedWord){
+//             return true;
+//         }else if(userWord !== reversedWord){
+//             return false;
+//         }
+//     }
     
-    console.log(isPalindrom(userWord));
+//     console.log(isPalindrom(userWord));
 
-})
+// })
 
 
 
@@ -47,32 +47,38 @@ Dichiariamo chi ha vinto.
 Bonus: L’inserimento avviene tramite un campo input
 
  */
+const numBtn = document.getElementById("num-btn");
 
-// const segno = prompt("pari o dispari?");
-// const numero = parseInt(prompt("inserisci un numero da 1 a 5"));
-// console.log(segno, numero);
+numBtn.addEventListener("click", function(){
 
-// let random;
-// function randomNum(){
-//     random = Math.floor(Math.random() * 5 + 1);
-//     return random;
-// }
+    const segno = document.getElementById("segno").value;
+    const numero = parseInt(document.getElementById("your-num").value);
+    console.log(segno, numero);
 
-// console.log(randomNum());
+    let random;
+    function randomNum(){
+        random = Math.floor(Math.random() * 5 + 1);
+        return random;
+    }
 
-// let sum = numero + random;
-// console.log(sum);
+    console.log(randomNum());
 
-// function winner(sum){
-//     if(segno === "pari" && (sum % 2) === 0){
-//         console.log("You won!");
-//     }else if(segno === "dispari" && (sum % 2) === 0){
-//         console.log("You lost!");
-//     }else if(segno === "pari" && (sum % 2) !== 0){
-//         console.log("You lost!");
-//     }else if (segno === "dispari" && (sum % 2) !== 0){
-//        console.log("You won!");
-//     }
-// }
+    let sum = numero + random;
+    console.log(sum);
 
-// console.log(winner(sum));
+    function winner(sum){
+        if(segno === "pari" && (sum % 2) === 0){
+            console.log("You won!");
+        }else if(segno === "dispari" && (sum % 2) === 0){
+            console.log("You lost!");
+        }else if(segno === "pari" && (sum % 2) !== 0){
+            console.log("You lost!");
+        }else if (segno === "dispari" && (sum % 2) !== 0){
+        console.log("You won!");
+        }
+    }
+
+    console.log(winner(sum));
+
+})
+
