@@ -42,4 +42,7 @@ Bonus: L’inserimento avviene tramite un campo input
 const segno = prompt("pari o dispari?");
 const numero = parseInt(prompt("inserisci un numero da 1 a 5"));
 
-console.log(segno, numero);
+function randomNum(){
+    return Math.floor(Math.random() * 5 + 1);
+}
+
