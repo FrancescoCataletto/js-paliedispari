@@ -1,0 +1,31 @@
+#programs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+#palindrome{
+    background-color: rgba(255, 0, 0, 0.2);
+    padding: 10px;
+}
+
+#pari-dispari{
+    background-color: rgba(0, 0, 255, 0.2);
+    padding: 10px;
+}
+
+button{
+    border-radius: 25px;
+    border: none;
+    background-color: darkcyan;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+button:hover{
+    opacity: 0.8;
+}

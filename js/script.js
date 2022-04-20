@@ -8,6 +8,7 @@ Bonus: L’inserimento avviene tramite un campo input
 
 
 const palBtn = document.getElementById("pal-btn");
+const isPal = document.getElementById("isPal");
 
 palBtn.addEventListener("click", function(){
 
@@ -19,12 +20,10 @@ palBtn.addEventListener("click", function(){
             reversedWord += userWord[i];
         } 
         
-        console.log(reversedWord);
-        
         if(userWord === reversedWord){
-            return true;
+            isPal.innerHTML = "Questa parola è palindroma";
         }else if(userWord !== reversedWord){
-            return false;
+            isPal.innerHTML = "Questa parola non è palindroma";
         }
     }
     
@@ -60,7 +59,7 @@ numBtn.addEventListener("click", function(){
     let random;
     function randomNum(){
         random = Math.floor(Math.random() * 5 + 1);
-        computerNum.innerHTML = "Computer number is" + random;
+        computerNum.innerHTML = "Computer number is" + " " + random;
         return random;
     }
     
