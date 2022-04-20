@@ -54,3 +54,16 @@ console.log(randomNum());
 let sum = numero + random;
 console.log(sum);
 
+function winner(sum){
+    if(segno === "pari" && (sum % 2) === 0){
+        console.log("You won!");
+    }else if(segno === "dispari" && (sum % 2) === 0){
+        console.log("You lost!");
+    }else if(segno === "pari" && (sum % 2) !== 0){
+        console.log("You lost!");
+    }else if (segno === "dispari" && (sum % 2) !== 0){
+       console.log("You won!");
+    }
+}
+
+console.log(winner(sum));
