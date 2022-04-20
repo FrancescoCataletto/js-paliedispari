@@ -8,8 +8,15 @@ Bonus: L’inserimento avviene tramite un campo input
 
 const userWord = prompt("Inserisci una parola");
 
+function isPalindrom(userWord){
+    let reversedWord = "";
+    for(let i = userWord.length -1; i >= 0; i--){
+        reversedWord += userWord[i];
+    }
+    console.log(reversedWord);
+}
 
-
+console.log(isPalindrom(userWord));
 
 
 
