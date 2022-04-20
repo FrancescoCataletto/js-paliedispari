@@ -6,6 +6,16 @@ Bonus: L’inserimento avviene tramite un campo input
 
  */
 
+const userWord = prompt("Inserisci una parola");
+
+
+
+
+
+
+
+
+
 /*
 Pari e Dispari
 L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
