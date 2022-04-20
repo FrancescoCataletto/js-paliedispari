@@ -7,30 +7,30 @@ Bonus: L’inserimento avviene tramite un campo input
  */
 
 
-// const palBtn = document.getElementById("pal-btn");
+const palBtn = document.getElementById("pal-btn");
 
-// palBtn.addEventListener("click", function(){
+palBtn.addEventListener("click", function(){
 
-//     const userWord = document.getElementById("pal-word").value;
+    const userWord = document.getElementById("pal-word").value;
 
-//     function isPalindrom(userWord){
-//         let reversedWord = "";
-//         for(let i = userWord.length -1; i >= 0; i--){
-//             reversedWord += userWord[i];
-//         } 
+    function isPalindrom(userWord){
+        let reversedWord = "";
+        for(let i = userWord.length -1; i >= 0; i--){
+            reversedWord += userWord[i];
+        } 
         
-//         console.log(reversedWord);
+        console.log(reversedWord);
         
-//         if(userWord === reversedWord){
-//             return true;
-//         }else if(userWord !== reversedWord){
-//             return false;
-//         }
-//     }
+        if(userWord === reversedWord){
+            return true;
+        }else if(userWord !== reversedWord){
+            return false;
+        }
+    }
     
-//     console.log(isPalindrom(userWord));
+    console.log(isPalindrom(userWord));
 
-// })
+})
 
 
 
