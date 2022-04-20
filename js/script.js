@@ -16,8 +16,7 @@ palBtn.addEventListener("click", function(){
 
     function isPalindrom(userWord){
         if(!isNaN(userWord)){
-            isPal.innerHTML = "Non inserire numeri o caratteri speciali";
-            return isPalindrom;
+            return isPal.innerHTML = "Non inserire numeri o caratteri speciali";   
         }
         let reversedWord = "";
         for(let i = userWord.length -1; i >= 0; i--){
