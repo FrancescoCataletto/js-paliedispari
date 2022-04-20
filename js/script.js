@@ -15,6 +15,10 @@ palBtn.addEventListener("click", function(){
     const userWord = document.getElementById("pal-word").value;
 
     function isPalindrom(userWord){
+        if(!isNaN(userWord)){
+            isPal.innerHTML = "Non inserire numeri o caratteri speciali";
+            return isPalindrom;
+        }
         let reversedWord = "";
         for(let i = userWord.length -1; i >= 0; i--){
             reversedWord += userWord[i];
@@ -26,9 +30,7 @@ palBtn.addEventListener("click", function(){
             isPal.innerHTML = "Questa parola non è palindroma";
         }
     }
-    
-    console.log(isPalindrom(userWord));
-
+    return isPalindrom(userWord);
 })
 
 
