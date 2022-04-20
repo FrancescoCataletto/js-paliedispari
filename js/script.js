@@ -48,6 +48,8 @@ Bonus: L’inserimento avviene tramite un campo input
 
  */
 const numBtn = document.getElementById("num-btn");
+const result = document.getElementById("result");
+const computerNum = document.getElementById("computer-num");
 
 numBtn.addEventListener("click", function(){
 
@@ -58,9 +60,10 @@ numBtn.addEventListener("click", function(){
     let random;
     function randomNum(){
         random = Math.floor(Math.random() * 5 + 1);
+        computerNum.innerHTML = "Computer number is" + random;
         return random;
     }
-
+    
     console.log(randomNum());
 
     let sum = numero + random;
@@ -68,13 +71,13 @@ numBtn.addEventListener("click", function(){
 
     function winner(sum){
         if(segno === "pari" && (sum % 2) === 0){
-            console.log("You won!");
+            result.innerHTML = ("You won!");
         }else if(segno === "dispari" && (sum % 2) === 0){
-            console.log("You lost!");
+            result.innerHTML =("You lost!");
         }else if(segno === "pari" && (sum % 2) !== 0){
-            console.log("You lost!");
+            result.innerHTML = ("You lost!");
         }else if (segno === "dispari" && (sum % 2) !== 0){
-        console.log("You won!");
+            result.innerHTML = ("You won!");
         }
     }
 
